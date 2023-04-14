@@ -6,8 +6,10 @@ button.addEventListener('click',(e)=>{
     if(password.value !== confirmPassword.value){
         e.preventDefault();
         passwordMatch.style.display = 'block';
-        password.style.border = '2px solid red';
-        confirmPassword.style.border = '2px solid red';
+        password.style.border = '1px solid red';
+        confirmPassword.style.border = '1px solid red';
+        password.value = '';
+        confirmPassword.value = '';
 
     }
 });
