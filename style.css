@@ -23,20 +23,35 @@ article{
 
 .header{
     margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-right: 100px;
     font-weight: bold;
     font-size: 1.2rem;
-    /* outline: 2px solid green; */
-
 }
 .header p:last-child{
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .main-form{
     background-color: white;
-    outline: 2px solid red;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    margin-right: 120px;
+}
+label{
+    display: block;
+}
+input{
+    padding: 8px;
+    width: 25vw;
+    margin-right: 20px;
 }
 .form-footer{
     outline: 2px solid blue;
