@@ -5,6 +5,7 @@
 }
 body{
     display: flex;
+    font-family: sans-serif;
 }
 .bg-image{
     height: 100vh;
@@ -17,5 +18,26 @@ body{
 }
 article{
     flex: 2;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
+}
+
+.header{
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-right: 100px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* outline: 2px solid green; */
+
+}
+.header p:last-child{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.main-form{
+    background-color: white;
+    outline: 2px solid red;
+}
+.form-footer{
+    outline: 2px solid blue;
 }
