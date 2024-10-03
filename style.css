@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     display: flex;
     font-family: sans-serif;
 }
-.bg-image{
+.bg-image {
     height: 100vh;
     min-height: 100vh;
 
@@ -16,75 +16,119 @@ body{
     background-repeat: no-repeat;
     flex: 1;
 }
-article{
+article {
     flex: 2;
     background-color: whitesmoke;
 }
 
-.header{
+.header {
     margin-left: 50px;
     margin-top: 80px;
     margin-right: 100px;
     font-weight: bold;
     font-size: 1.2rem;
 }
-.header p:last-child{
+.header p:last-child {
     margin-top: 30px;
     margin-bottom: 40px;
 }
-.main-form{
+.main-form {
     background-color: white;
     padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-ul{
+ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     height: 30vh;
     margin-right: 120px;
 }
-label{
+label {
     display: block;
 }
-input{
+input {
     padding: 8px;
     width: 20vw;
     margin-right: 20px;
-    border: 1px solid #E5E7EB;
+    border: 1px solid #e5e7eb;
     border-radius: 5px;
 }
-input:focus{
-    border: 2px solid rgb(14, 101, 224);
+
+input[type='checkbox'] {
+    margin-right: 2px;
+    padding: 0;
+    width: 20px;
+    margin-top: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #d5d5d5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type='checkbox']:focus {
     outline: none;
+}
+input[type='checkbox']:hover {
+    background: #a5a5a5;
+}
+input[type='checkbox']:after {
+    content: '\2713';
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+input[type='checkbox']:checked {
+    background-color: #596d48;
+}
+
+input[type='checkbox']:checked:after {
+    display: block;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox-container label {
+    margin-top: 9px;
+    margin-left: 5px;
+}
+
+input:focus {
+    outline: 2px solid rgb(14, 101, 224);
 }
 ul li p {
     font-size: 0.7rem;
     color: red;
     display: none;
 }
-.form-footer{
+.form-footer {
     margin-left: 50px;
     margin-top: 50px;
 }
-button{
+button {
     padding: 15px 40px;
     font-weight: bold;
-    background-color: #596D48;
+    background-color: #596d48;
     color: white;
     border: none;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-.form-footer p{
+.form-footer p {
     margin-top: 10px;
     font-weight: 700;
 }
-.form-footer p a{
+.form-footer p a {
     text-decoration: none;
-    color: #596D48;
+    color: #596d48;
 }
-
